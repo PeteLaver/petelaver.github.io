@@ -10,12 +10,12 @@ favicon_data <- data.frame(
 set.seed(42)
 
 # 1. Define independent variable (Time index)
-time <- seq(0, 24, by = 0.1)
+time <- seq(0, 24, by = 0.3)
 
 # 2. Configure sinusoidal components
 amplitude <- 2
 period    <- 48
-phase     <- 2
+phase     <- 1
 
 # 3. Generate pure sine wave + Gaussian noise
 y_pure  <- amplitude * sin((2 * pi / period) * time + phase)
