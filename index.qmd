@@ -13,7 +13,7 @@ about:
   #     href: https://github.com
 ---
 
-I'm a bioinformatician in the Division of Neurosurgery [↗](https://health.uct.ac.za/neurosurgery){target="_blank"} at the University of Cape Town for the African Brain Child Initiative [↗](https://africanbrainchild.com/){target="_blank"}. We are affiliated to the Neuroscience Institute [↗](https://neuroscience.uct.ac.za/){target="_blank"}. I assist our team with quantitative research on paediatric central nervous system conditions including tuberculous meningitis, traumatic brain injury, and brain tumour classification. I am primarily based in the Institute for Child Health at the Red Cross War Memorial Children's Hospital [↗](https://www.childrenshospitaltrust.org.za/the-hospital/){target="_blank"}. 
+I'm a bioinformatician in the Division of Neurosurgery [↗](https://health.uct.ac.za/neurosurgery){target="_blank"} at the University of Cape Town for the African Brain Child Initiative [↗](https://africanbrainchild.com/){target="_blank"}, affiliated to the Neuroscience Institute [↗](https://neuroscience.uct.ac.za/){target="_blank"}. I assist our team with quantitative research on paediatric central nervous system conditions including tuberculous meningitis, traumatic brain injury, and brain tumour classification. I am based in the Institute for Child Health at the Red Cross War Memorial Children's Hospital [↗](https://www.childrenshospitaltrust.org.za/the-hospital/){target="_blank"}. 
 
 ## Education
 
@@ -46,4 +46,10 @@ SA NRF Scarce Skills Post-doctoral Fellow | 2014--2016
 **Department of Fish and Wildlife Conservation [↗](https://fishwild.vt.edu/index.html){target="_blank"}, Virginia Tech**  
 Post-doctoral Researcher | 2013  
 Research and Teaching Assistant | 2003--2005, 2008--2013
+
+## Disclaimer
+
+This is my personal research site. I built it to share material for general information and educational purposes. Any views and content presented here are my own and do not reflect those of any current or past employers. The work that I share is not professional or medical advice. While I try to keep information up to date, accuracy is not guaranteed and I take no responsibility for the security or content of third-party external links.
+
+
 
