@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Pete Laver"
+  favicon: favicon-16.png
   navbar:
     background: primary
     search: true
