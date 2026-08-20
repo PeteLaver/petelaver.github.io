@@ -19,8 +19,8 @@ website:
       #   href: outreach.qmd 
       # - text: "CV"
       #   href: cv.qmd 
-      # - text: "Blog"
-      #   href: blog.qmd 
+      - text: "Blog"
+        href: blog.qmd
       # - text: "Miscellania"
       #   href: miscellania.qmd 
 
