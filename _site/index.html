@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header><main class="content" id="quarto-document-content">
 
-<p>I’m a bioinformatician in the African Brain Child group which is part of the Division of Neurosurgery at the University of Cape Town.</p>
+<p>I’m a bioinformatician in the Division of Neurosurgery at the University of Cape Town for the African Brain Child Initiative. We are affiliated to the Neuroscience Institute, University of Cape Town. I assist our team with quantitative research on paediatric central nervous system conditions including tuberculous meningitis, traumatic brain injury, and brain tumour classification. I am primarily based in the Institute for Child Health at the Red Cross War Memorial Children’s Hospital.</p>
 <section id="education" class="level2">
 <h2 data-anchor-id="education">Education</h2>
 <p>Virginia Tech, USA<br>
@@ -139,7 +139,8 @@ B.Sc. in Forestry (Nature Conservation) | 2002</p>
 <section id="experience" class="level2">
 <h2 data-anchor-id="experience">Experience</h2>
 <p>Learning Sandbox and LabXchange<br>
-Subject Matter Expert (in Data Science and Biotechnology) | 2020–2026 Account Manager (Learning Sandbox) | 2025</p>
+Subject Matter Expert (in Data Science and Biotechnology) | 2020–2026<br>
+Account Manager (Learning Sandbox) | 2025</p>
 <p>Biodiversity and Development Institute<br>
 Director | 2018–2020</p>
 <p>Mogalakwena Research Centre<br>
@@ -224,7 +225,7 @@ Research and Teaching Assistant | 2003–2005, 2008–2013</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/PeteLaver\.github\.io\/petelaver\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
