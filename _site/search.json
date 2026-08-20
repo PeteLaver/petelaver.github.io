@@ -32,13 +32,20 @@
     "href": "posts/welcome-post/index.html",
     "title": "Personal research site launch",
     "section": "",
-    "text": "A lot of research happens in the liminal space between coming up with an idea and getting that idea published or produced. To make some of that work more transparent, this site will house some intermediate research products.\nThis will also serve as a space for hosting interactive digital content that will hopefully be useful to others. Posts are unlikely to have a regular cadence. The site will instead evolve in a saltatorial manner."
+    "text": "A lot of research happens in the liminal space between coming up with an idea and getting that idea published in an academic journal. To make some of that work more transparent, this site will house some of my intermediate research products.\nThis will also serve as a space for hosting interactive digital content that will hopefully be useful to others. Posts are unlikely to have a regular cadence. The site will instead evolve in a saltatorial manner."
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Personal research site launch\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Personal research site launch\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nObservable slider\n\n\n\nobservablejs\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/observable-slider/index.html",
+    "href": "posts/observable-slider/index.html",
+    "title": "Observable slider",
+    "section": "",
+    "text": "data = Array.from(\n  {length: 1000},\n  () =&gt; ({rating: Math.random() * 10 + 1})\n)\n\nviewof binCount = Inputs.range(\n  [5, 50],\n  {value: 20, step: 1, label: \"Bins:\"}\n)\n\nPlot.plot({\n  title: \"Distribution of ratings\",\n  titleFontSize: 22,\n  width: 700,\n  height: 400,\n  \n  marginTop: 50,\n  marginRight: 30,\n  marginBottom: 60,\n  marginLeft: 70,\n  \n  style: {\n    fontFamily: \"Arial, sans-serif\",\n    fontSize: \"16px\"\n  },\n  \n  x: {\n    label: \"Rating\",\n    tickFormat: d =&gt; d.toFixed(1),\n    tickSize: 5,\n    labelFontSize: 12,\n    tickFontSize: 14\n  },\n  y: {\n    label: \"Number of observations\",\n    grid: true,\n    labelFontSize: 18,\n    tickFontSize: 14\n  },\n  marks: [\n    Plot.rectY(\n      data,\n      Plot.binX(\n        {y: \"count\"},\n        {\n          x: \"rating\",\n          thresholds: binCount,\n          fill: \"steelblue\",\n          fillOpacity: 0.65,\n          stroke: \"white\"\n        }\n      )\n    ),\n    Plot.tip(\n      data,\n      Plot.pointerX(\n        Plot.binX(\n          {y: \"count\"},\n          {\n            x: \"rating\",\n            thresholds: binCount\n          }\n        )\n      )\n    )\n  ]\n})"
   }
 ]

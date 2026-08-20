@@ -2,7 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/welcome-post/index.html"
+      "/posts/welcome-post/index.html",
+      "/posts/observable-slider/index.html"
     ]
   }
 ]

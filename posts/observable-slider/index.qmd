@@ -1,0 +1,79 @@
+---
+title: "Observable slider"
+date: "2026-08-20"
+categories: [observablejs]
+draft: true
+---
+
+```{ojs}
+//| echo: false
+
+data = Array.from(
+  {length: 1000},
+  () => ({rating: Math.random() * 10 + 1})
+)
+
+viewof binCount = Inputs.range(
+  [5, 50],
+  {value: 20, step: 1, label: "Bins:"}
+)
+
+Plot.plot({
+  title: "Distribution of ratings",
+  titleFontSize: 22,
+  width: 700,
+  height: 400,
+  
+  marginTop: 50,
+  marginRight: 30,
+  marginBottom: 60,
+  marginLeft: 70,
+  
+  style: {
+    fontFamily: "Arial, sans-serif",
+    fontSize: "16px"
+  },
+  
+  x: {
+    label: "Rating",
+    tickFormat: d => d.toFixed(1),
+    tickSize: 5,
+    labelFontSize: 12,
+    tickFontSize: 14
+  },
+  y: {
+    label: "Number of observations",
+    grid: true,
+    labelFontSize: 18,
+    tickFontSize: 14
+  },
+  marks: [
+    Plot.rectY(
+      data,
+      Plot.binX(
+        {y: "count"},
+        {
+          x: "rating",
+          thresholds: binCount,
+          fill: "steelblue",
+          fillOpacity: 0.65,
+          stroke: "white"
+        }
+      )
+    ),
+    Plot.tip(
+      data,
+      Plot.pointerX(
+        Plot.binX(
+          {y: "count"},
+          {
+            x: "rating",
+            thresholds: binCount
+          }
+        )
+      )
+    )
+  ]
+})
+
+```
