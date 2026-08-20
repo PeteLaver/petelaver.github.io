@@ -1,0 +1,49 @@
+---
+title: "Pete Laver"
+about:
+  template: jolla
+  image-width: 8em
+  image: www/pete.png
+  # links:
+  #   - icon: bluesky
+  #     text: Bluesky
+  #     href: https://bsky.app
+  #   - icon: github
+  #     text: Github
+  #     href: https://github.com
+---
+
+I'm a bioinformatician in the African Brain Child group which is part of the Division of Neurosurgery at the University of Cape Town.
+
+## Education
+
+Virginia Tech, USA  
+Ph.D. in Fisheries and Wildlife Science | 2013  
+M.Sc. in Fisheries and Wildlife Science | 2005  
+
+Stellenbosch University, South Africa  
+B.Sc. in Forestry (Nature Conservation) | 2002
+
+## Experience
+
+Learning Sandbox and LabXchange  
+Subject Matter Expert (in Data Science and Biotechnology) | 2020--2026
+Account Manager (Learning Sandbox) | 2025
+
+Biodiversity and Development Institute  
+Director | 2018--2020
+
+Mogalakwena Research Centre  
+Deputy Directory, Advisory Board Member | 2014--2020  
+Founding Research Manager | 2006--2007
+
+Department of Biological Sciences, University of Cape Town  
+Claude Leon Foundation Post-doctoral Fellow | 2017--2018
+
+Department of Anatomy and Physiology, University of Pretoria  
+SA NRF Scarce Skills Post-doctoral Fellow | 2014--2016
+
+Department of Fish and Wildlife Conservation, Virginia Tech, USA  
+Post-doctoral Researcher | 2013  
+Research and Teaching Assistant | 2003--2005, 2008--2013
+

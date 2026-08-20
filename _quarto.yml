@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Pete Laver"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "About"
+        href: index.qmd
+      # - text: "Publications"
+      #   href: publications.qmd 
+      # - text: "Talks"
+      #   href: talks.qmd
+      # - text: "Teaching"
+      #   href: teaching.qmd 
+      # - text: "Outreach"
+      #   href: outreach.qmd 
+      # - text: "CV"
+      #   href: cv.qmd 
+      # - text: "Blog"
+      #   href: blog.qmd 
+      # - text: "Miscellania"
+      #   href: miscellania.qmd 
+
+format:
+  html:
+    theme: flatly # flatly lumen minty pulse solar slate
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
