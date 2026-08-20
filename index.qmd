@@ -2,7 +2,7 @@
 title: "Pete Laver"
 about:
   template: jolla
-  image-width: 8em
+  image-width: 10em
   image: www/pete.png
   # links:
   #   - icon: bluesky
@@ -17,7 +17,7 @@ I'm a bioinformatician in the Division of Neurosurgery [↗](https://health.uct.
 
 ## Education
 
-**Department of Fish and Wildlife Conservation [↗](https://fishwild.vt.edu/index.html){target="_blank"}, Virginia Tech, USA**  
+**Department of Fish and Wildlife Conservation [↗](https://fishwild.vt.edu/index.html){target="_blank"}, Virginia Tech**  
 Ph.D. in Fisheries and Wildlife Science | 2013  
 M.Sc. in Fisheries and Wildlife Science | 2005  
 
@@ -43,7 +43,7 @@ Claude Leon Foundation Post-doctoral Fellow | 2017--2018
 **Department of Anatomy and Physiology [↗](https://www.up.ac.za/anatomy-physiology){target="_blank"}, University of Pretoria**  
 SA NRF Scarce Skills Post-doctoral Fellow | 2014--2016
 
-**Department of Fish and Wildlife Conservation [↗](https://fishwild.vt.edu/index.html){target="_blank"}, Virginia Tech, USA**  
+**Department of Fish and Wildlife Conservation [↗](https://fishwild.vt.edu/index.html){target="_blank"}, Virginia Tech**  
 Post-doctoral Researcher | 2013  
 Research and Teaching Assistant | 2003--2005, 2008--2013
 
