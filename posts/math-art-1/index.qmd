@@ -4,6 +4,9 @@ date: "2026-08-28"
 categories: [math-art]
 ---
 
+<br>
+<br>
+
 ![Graph of f(x) = x^z where z >= 2 and < 3](y_raised_2_to_2.9.png)
 
-This is $f(x) = x^z \text{ for } z \in [2,3)$, with the function collapsing into an apparent single line for $x < 0$ and non-integer values of $z$ where the function is in the domain of complex numbers (real and imaginary parts). 
+This is $f(x) = x^z \text{ for } z \in [2,3)$. For $z = 2$, the red line, the function behaves as you would expect it to, creating a parabola. However, for $x < 0$ and non-integer values of $z$, the function produces complex numbers (they have real and imaginary parts), creating a problem for plotting. 
