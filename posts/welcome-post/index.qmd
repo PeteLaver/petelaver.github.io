@@ -2,6 +2,7 @@
 title: "Personal research site launch"
 date: "2026-08-20"
 categories: [news]
+description: "A place for random thoughts, intermediate research, and educational outreach."
 ---
 
 A lot of research happens in the liminal space between coming up with an idea and getting that idea published in an academic journal. To make some of that work more transparent, this site will house some of my intermediate research products.

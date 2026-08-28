@@ -2,6 +2,7 @@
 title: "Friday math art"
 date: "2026-08-28"
 categories: [math-art]
+description: "A basic plot of f(x) = x^z and how it breaks down in complex number space."
 ---
 
 <br>
