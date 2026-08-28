@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Personal research site launch\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Friday math art\n\n\n\nmath-art\n\n\n\n\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal research site launch\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -40,5 +40,12 @@
     "title": "Personal research site launch",
     "section": "",
     "text": "A lot of research happens in the liminal space between coming up with an idea and getting that idea published in an academic journal. To make some of that work more transparent, this site will house some of my intermediate research products.\nThis will also serve as a space for hosting interactive digital content that will hopefully be useful to others. Posts are unlikely to have a regular cadence. The site will instead evolve in a saltatorial manner."
+  },
+  {
+    "objectID": "posts/math-art-1/index.html",
+    "href": "posts/math-art-1/index.html",
+    "title": "Friday math art",
+    "section": "",
+    "text": "Graph of f(x) = x^z where z &gt;= 2 and &lt; 3\n\n\nThis is \\(f(x) = x^z \\text{ for } z \\in [2,3)\\), with the function collapsing into an apparent single line for \\(x &lt; 0\\) and non-integer values of \\(z\\) where the function is in the domain of complex numbers (real and imaginary parts)."
   }
 ]
