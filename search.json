@@ -46,6 +46,6 @@
     "href": "posts/math-art-1/index.html",
     "title": "Friday math art",
     "section": "",
-    "text": "Graph of f(x) = x^z where z &gt;= 2 and &lt; 3\n\n\nThis is \\(f(x) = x^z \\text{ for } z \\in [2,3)\\). For \\(z = 2\\), the red line, the function behaves as you would expect it to, creating a parabola. However, for \\(x &lt; 0\\) and non-integer values of \\(z\\), the function produces complex numbers (they have real and imaginary parts), creating a problem for plotting."
+    "text": "Graph of f(x) = x^z where z &gt;= 2 and &lt; 3\n\n\nThis is \\(f(x) = x^z \\text{ for } z \\in [2,3)\\). For \\(z = 2\\) (the red line), the function behaves as you would expect it to, creating a parabola. However, for \\(x &lt; 0\\) and non-integer values of \\(z\\), the function produces complex numbers (they have real and imaginary parts), creating a problem for plotting (see below).\n\n\n\nGraph of f(x) = x^z where z &gt;= 2 and &lt; 3 with axes"
   }
 ]
