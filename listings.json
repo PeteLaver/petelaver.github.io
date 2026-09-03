@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/correlation-and-R2/index.html",
       "/posts/math-art-1/index.html",
       "/posts/welcome-post/index.html"
     ]
