@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-20">
-<meta name="description" content="A place for random thoughts, intermediate research, and educational outreach.">
+<meta name="dcterms.date" content="2026-08-28">
 
-<title>Personal research site launch – Pete Laver</title>
+<title>Friday math art – Pete Laver</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -74,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -122,17 +150,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Personal research site launch</h1>
+<h1 class="title">Friday math art</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">news</div>
+    <div class="quarto-category">math-art</div>
   </div>
   </div>
 
-<div>
-  <div class="description">
-    A place for random thoughts, intermediate research, and educational outreach.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -141,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 20, 2026</p>
+      <p class="date">August 28, 2026</p>
     </div>
   </div>
   
@@ -153,8 +176,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A lot of research happens in the liminal space between coming up with an idea and getting that idea published in an academic journal. To make some of that work more transparent, this site will house some of my intermediate research products.</p>
-<p>This will also serve as a space for hosting interactive digital content that will hopefully be useful to others. Posts are unlikely to have a regular cadence. The site will instead evolve in a saltatorial manner.</p>
+<p><br> <br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="y_raised_2_to_2.9.png" class="img-fluid figure-img"></p>
+<figcaption>Graph of f(x) = x^z where z &gt;= 2 and &lt; 3</figcaption>
+</figure>
+</div>
+<p>This is <span class="math inline">\(f(x) = x^z \text{ for } z \in [2,3)\)</span>.</p>
+<p>For <span class="math inline">\(z = 2\)</span> (the red line), the function behaves as you would expect it to, creating a parabola. However, for <span class="math inline">\(x &lt; 0\)</span> and non-integer values of <span class="math inline">\(z\)</span>, the function produces complex numbers (they have real and imaginary parts), creating a problem for plotting (see below).</p>
+<p><br> <br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="y_raised_2_to_2.9_b.png" class="img-fluid figure-img"></p>
+<figcaption>Graph of f(x) = x^z where z &gt;= 2 and &lt; 3 with axes</figcaption>
+</figure>
+</div>
 
 
 

@@ -1,0 +1,533 @@
+---
+title: "<i>r</i> and <i>R</i>-squared"
+date: "2026-09-03"
+categories: [statistics]
+description: " "
+---
+
+<style>
+g[aria-label$="axis label"] text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+g[aria-label$="axis tick label"] text {
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0rem 2rem;
+
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  background: #fafafa;
+
+  padding: 15px 20px;
+  margin: 1rem 0 2rem 0;
+}
+
+
+/* Button positioning */
+.control-resample .control-n {
+  padding-top: 10px;
+}
+
+/* Lighter button */
+.control-resample button {
+  background-color: #e6e6e6;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Slightly darker when hovering */
+.control-resample button:hover {
+  background-color: #d8d8d8;
+}
+</style>
+
+
+
+
+
+```{ojs}
+//| echo: false
+
+// 1. Create the interactive slider for Pearson's r
+viewof r = Inputs.range([-1, 1], { value: 0.7, step: 0.01, label: html`Pop. corr. (ρ):` })
+
+viewof sampleSize = Inputs.select([10, 100, 1000, 10000], { 
+  value: 100, 
+  label: "Sample size (n):" 
+})
+
+viewof resample = Inputs.button("Resample data")
+
+// Calculate R^2 directly from r
+r2 = Math.pow(r, 2)
+
+// Function to compute sample correlation (r) from generated points
+function getSampleR(points) {
+  const n = points.length;
+  const meanX = points.reduce((acc, p) => acc + p.x, 0) / n;
+  const meanY = points.reduce((acc, p) => acc + p.y, 0) / n;
+  
+  let num = 0, denX = 0, denY = 0;
+  for (let p of points) {
+    const dx = p.x - meanX;
+    const dy = p.y - meanY;
+    num += dx * dy;
+    denX += dx * dx;
+    denY += dy * dy;
+  }
+  return num / Math.sqrt(denX * denY);
+}
+
+// 2. Generate sample data for the scatter plot based on population r
+data = {
+  resample; // Triggers evaluation on click
+  
+  const n = sampleSize;
+  const points = [];
+  for (let i = 0; i < n; i++) {
+    const u1 = Math.random();
+    const u2 = Math.random();
+    const z0 = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2.0 * Math.PI * u2);
+    const z1 = Math.sqrt(-2.0 * Math.log(u1)) * Math.sin(2.0 * Math.PI * u2);
+    
+    // Correlate the variables: Y = r*X + sqrt(1 - r^2)*Z
+    const x = z0;
+    const y = r * z0 + Math.sqrt(1 - Math.pow(r, 2)) * z1;
+    points.push({ x: x, y: y });
+  }
+  return points;
+}
+
+// 3. Compute sample statistics AFTER data is fully constructed
+sampleR = getSampleR(data)
+sampleR2 = Math.pow(sampleR, 2)
+
+// Data for the static parabola curve (r vs R^2)
+parabolaData = Array.from({ length: 201 }, (_, i) => {
+  const xVal = -1 + i * 0.01;
+  return { r: xVal, r2: Math.pow(xVal, 2) };
+})
+```
+
+```{ojs}
+//| echo: false
+
+html`
+<div class="controls">
+
+  <div class="control control-r">
+    ${viewof r}
+  </div>
+  
+  <div class="control control-point">
+    ${viewof pointIndex}
+  </div>
+  
+  <div class="control control-n">
+    ${viewof sampleSize}
+  </div>
+
+  <div class="control control-resample">
+    ${viewof resample}
+  </div>
+
+</div>
+`
+
+
+```
+
+
+```{ojs}
+//| echo: false
+// 3. Render both plots side-by-side using Observable Plot
+
+html`<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <div>
+    <h4 style="margin: 0 0 10px 0; text-align: center;">ρ, <i>r</i>, and <i>R</i>²</h4>
+    ${Plot.plot({
+      width: 380,
+      height: 380,
+      marginBottom: 45,
+      marginTop: 35,
+      marginLeft: 40,
+      marginRight: 40,
+      x: { domain: [-1, 1], label: "Correlation coefficient" },
+      y: { domain: [0, 1], label: "Coefficient of Determination (R²)" },
+      grid: true,
+      marks: [
+        // The static parabola line
+        Plot.line(parabolaData, { x: "r", y: "r2", stroke: "#aaa", strokeWidth: 2 }),
+        // The active point corresponding to the slider
+        Plot.dot([{ r: r, r2: r2 }], { x: "r", y: "r2", fill: "blue", r: 6 }),
+        Plot.dot([{ r: sampleR, r2: sampleR2 }], { x: "r", y: "r2", fill: "red", r: 6 })
+      ]
+    })}
+  </div>
+
+  <div>
+    <h4 style="margin: 0 0 10px 0; text-align: center;">Sample (<i>r</i> = ${sampleR.toFixed(2)}, <i>R</i>² = ${sampleR2.toFixed(2)})</h4>${Plot.plot({
+      width: 380,
+      height: 380,
+      marginBottom: 45,
+      marginTop: 35,
+      marginLeft: 40,
+      marginRight: 40,
+      x: { domain: [-5, 5], label: "X" },
+      y: { domain: [-5, 5], label: "Y" },
+      grid: true,
+      marks: [
+        Plot.dot(data, { x: "x", y: "y", fill: "red", opacity: 0.5, r: 3.5 }),
+        Plot.linearRegressionY(data, { x: "x", y: "y", stroke: "red" })
+      ]
+    })}
+  </div>
+  
+  <div>
+    <h4 style="margin: 0 0 10px 0; text-align: center;">
+      From deviations to sums of squares
+    </h4>
+
+    ${Plot.plot({
+      width: 380,
+      height: 380,
+      marginBottom: 45,
+      marginTop: 35,
+      marginLeft: 40,
+      marginRight: 40,
+      x: {
+        domain: [-5, 5],
+        label: "X"
+      },
+      y: {
+        domain: [-5, 5],
+        label: "Y"
+      },
+      grid: true,
+      marks: [
+
+        // Regression line
+        Plot.line(
+          [
+            {x: -5, y: intercept + slope * -5},
+            {x: 5, y: intercept + slope * 5}
+          ],
+          {
+            x: "x",
+            y: "y",
+            stroke: "red",
+            strokeWidth: 2
+          }
+        ),
+
+        // Mean Y line
+        Plot.ruleY([meanY], {
+          stroke: "black",
+          strokeDasharray: "5,5",
+          strokeWidth: 1.5
+        }),
+
+        // Total square: (y - meanY)^2
+        Plot.line(totalSquare, {
+          x: "x",
+          y: "y",
+          stroke: "#888",
+          strokeWidth: 2,
+          fill: "none"
+        }),
+
+        // Residual square: (y - fitted)^2
+        Plot.line(residualSquare, {
+          x: "x",
+          y: "y",
+          stroke: "#d33",
+          strokeWidth: 2,
+          fill: "none"
+        }),
+
+        // Vertical deviation: observed -> mean
+        Plot.link(
+          [{
+            x1: selectedPoint.x,
+            y1: selectedPoint.y,
+            x2: selectedPoint.x,
+            y2: meanY
+          }],
+          {
+            x1: "x1",
+            y1: "y1",
+            x2: "x2",
+            y2: "y2",
+            stroke: "#888",
+            strokeDasharray: "3,3"
+          }
+        ),
+
+        // Vertical deviation: observed -> fitted
+        Plot.link(
+          [{
+            x1: selectedPoint.x,
+            y1: selectedPoint.y,
+            x2: selectedPoint.x,
+            y2: selectedPoint.fitted
+          }],
+          {
+            x1: "x1",
+            y1: "y1",
+            x2: "x2",
+            y2: "y2",
+            stroke: "#d33",
+            strokeWidth: 2
+          }
+        ),
+
+        // Selected observation
+        Plot.dot([selectedPoint], {
+          x: "x",
+          y: "y",
+          r: 6,
+          fill: "black"
+        }),
+
+        // Fitted value
+        Plot.dot(
+          [{x: selectedPoint.x, y: selectedPoint.fitted}],
+          {
+            x: "x",
+            y: "y",
+            r: 5,
+            fill: "red"
+          }
+        ),
+
+        // Mean Y at this X
+        Plot.dot(
+          [{x: selectedPoint.x, y: meanY}],
+          {
+            x: "x",
+            y: "y",
+            r: 4,
+            fill: "black"
+          }
+        ),
+
+        // Labels
+        Plot.text(
+          [{x: selectedPoint.x + 0.2, y: selectedPoint.y + 0.25, label: "Observed y"}],
+          {
+            x: "x",
+            y: "y",
+            text: "label",
+            textAnchor: "start"
+          }
+        ),
+
+        Plot.text(
+          [{x: selectedPoint.x + 0.2, y: selectedPoint.fitted - 0.25, label: "ŷ"}],
+          {
+            x: "x",
+            y: "y",
+            text: "label",
+            textAnchor: "start",
+            fill: "red"
+          }
+        ),
+
+        Plot.text(
+          [{x: -4.7, y: meanY + 0.25, label: "ȳ"}],
+          {
+            x: "x",
+            y: "y",
+            text: "label",
+            textAnchor: "start"
+          }
+        )
+      ]
+    })}
+
+    <div style="font-size: 0.9em; margin-top: 8px;">
+      <b>Total:</b> (y − ȳ)² =
+      ${Math.pow(selectedTotal, 2).toFixed(2)}
+      &nbsp;&nbsp;
+      <b>Residual:</b> (y − ŷ)² =
+      ${Math.pow(selectedResidual, 2).toFixed(2)}
+    </div>
+  </div>
+
+
+  <!-- ====================================================== -->
+  <!-- Plot 4: Aggregate sums of squares                      -->
+  <!-- ====================================================== -->
+
+  <div>
+    <h4 style="margin: 0 0 10px 0; text-align: center;">
+      Sums of squares → <i>R</i>²
+    </h4>
+
+    ${Plot.plot({
+      width: 380,
+      height: 380,
+      marginBottom: 45,
+      marginTop: 35,
+      marginLeft: 40,
+      marginRight: 40,
+      y: {
+        label: "Sum of squared deviations",
+        grid: true
+      },
+      x: {
+        label: null
+      },
+      marks: [
+
+        // Total SS
+        Plot.barY(
+          [{type: "Total (SST)", value: SST}],
+          {
+            x: "type",
+            y: "value"
+          }
+        ),
+
+        // Explained + residual stacked decomposition
+        Plot.barY(
+          [
+            {type: "Decomposition", component: "Explained (SSR)", value: SSR},
+            {type: "Decomposition", component: "Residual (SSE)", value: SSE}
+          ],
+          {
+            x: "type",
+            y: "value",
+            fill: "component",
+            tip: true
+          }
+        ),
+
+        // Reference line showing SST
+        Plot.ruleY([SST], {
+          stroke: "black",
+          strokeDasharray: "5,5"
+        }),
+
+        Plot.text(
+          [{
+            type: "Total (SST)",
+            value: SST,
+            label: `SST = ${SST.toFixed(1)}`
+          }],
+          {
+            x: "type",
+            y: "value",
+            text: "label",
+            dy: -10
+          }
+        )
+      ]
+    })}
+
+    <div style="font-size: 0.9em; margin-top: 8px; line-height: 1.5;">
+      <b>SST</b> = ${SST.toFixed(1)}<br>
+      <b>SSR</b> = ${SSR.toFixed(1)} 
+      (${(100 * SSR / SST).toFixed(1)}% explained)<br>
+      <b>SSE</b> = ${SSE.toFixed(1)}
+      (${(100 * SSE / SST).toFixed(1)}% unexplained)<br>
+      <b><i>R</i>²</b> = SSR / SST =
+      ${R2_from_SS.toFixed(3)}
+    </div>
+  </div>
+  
+</div>`
+```
+
+
+
+```{ojs}
+//| echo: false
+
+// ============================================================
+// Sum-of-squares decomposition
+// ============================================================
+
+// Calculate regression coefficients for the generated sample
+meanX = data.reduce((s, p) => s + p.x, 0) / data.length
+meanY = data.reduce((s, p) => s + p.y, 0) / data.length
+
+covXY = data.reduce((s, p) => s + (p.x - meanX) * (p.y - meanY), 0)
+varX = data.reduce((s, p) => s + Math.pow(p.x - meanX, 2), 0)
+
+slope = covXY / varX
+intercept = meanY - slope * meanX
+
+// Fitted values
+dataWithFit = data.map((p, i) => ({
+  ...p,
+  fitted: intercept + slope * p.x,
+  index: i
+}))
+
+// Sum-of-squares components
+SST = dataWithFit.reduce(
+  (s, p) => s + Math.pow(p.y - meanY, 2), 0
+)
+
+SSE = dataWithFit.reduce(
+  (s, p) => s + Math.pow(p.y - p.fitted, 2), 0
+)
+
+SSR = dataWithFit.reduce(
+  (s, p) => s + Math.pow(p.fitted - meanY, 2), 0
+)
+
+R2_from_SS = SSR / SST
+
+// Choose an observation to illustrate the decomposition
+viewof pointIndex = Inputs.range(
+  [0, sampleSize - 1],
+  { 
+    value: Math.min(Math.floor(sampleSize / 2), sampleSize - 1),
+    step: 1,
+    label: "Observation:"
+  }
+)
+
+selectedPoint = dataWithFit[pointIndex]
+
+selectedTotal = selectedPoint.y - meanY
+selectedResidual = selectedPoint.y - selectedPoint.fitted
+selectedExplained = selectedPoint.fitted - meanY
+
+// A square representing a squared deviation.
+// The x dimension is deliberately made equal to the y dimension,
+// since x and y are both standard-normal scale in this simulation.
+function makeSquare(x, y, side) {
+  const s = Math.abs(side)
+  return [
+    { x: x,     y: y },
+    { x: x + s, y: y },
+    { x: x + s, y: y + (side >= 0 ? s : -s) },
+    { x: x,     y: y + (side >= 0 ? s : -s) },
+    { x: x,     y: y }
+  ]
+}
+
+totalSquare = makeSquare(
+  selectedPoint.x,
+  Math.min(selectedPoint.y, meanY),
+  selectedTotal
+)
+
+residualSquare = makeSquare(
+  selectedPoint.x + 0.15,
+  Math.min(selectedPoint.y, selectedPoint.fitted),
+  selectedResidual
+)
+
+```
+
