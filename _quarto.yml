@@ -10,8 +10,8 @@ website:
     left:
       - text: "About"
         href: index.qmd
-      # - text: "Publications"
-      #   href: publications.qmd 
+      - text: "Publications"
+        href: publications.qmd
       # - text: "Talks"
       #   href: talks.qmd
       # - text: "Teaching"

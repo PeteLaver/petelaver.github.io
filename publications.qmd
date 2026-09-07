@@ -3,3 +3,152 @@ title: "Publications"
 format: html
 ---
 
+## Journal articles
+
+- Dorsey, C., Sagrans, J., Yaneva, K., O’Brien, D., Collins, I., Gannon-Slater, N., Jalbert, A., Kastelein, K., Laver, P., Reilly, J., and Schwein, P. 2025. Integrating Data Literacy into K-12 Education. Harvard Data Science Review 7(2). DOI: https://doi.org/10.1162/99608f92.24d90bdc [↗](https://doi.org/10.1162/99608f92.24d90bdc){target="_blank"}
+
+- Botha, A.E., Schulman, M.L., Birrell, J., du Plessis, L., Laver, P.N., Soley, J., Colenbrander, B., and Bertschinger, H.J. 2022. Effects of an anit-gonadoliberin releasing hormone vaccine on testicular epididymal and spermatogenic development in the horse. Reproduction in Domestic Animals 57, 919-927. 
+
+- Laver, P., Ganswindt, A., Ganswindt, S., and Alexander, K. 2020. Effect of food limitation and reproductive activity on fecal glucocorticoid metabolite levels in banded mongooses. BMC Ecology 20, 12. DOI: https://doi.org/10.1186/s12898-020-00280-z [↗](https://doi.org/10.1186/s12898-020-00280-z){target="_blank"}
+
+- van Loggerenberg, D.E., Laver, P.N., Myburgh, J.G., and Botha, C.J. 2019. Diagnostic value of energy dispersive hand-held X-ray fluorescence spectrometry in determining trace element concentrations in ovine liver. Biological Trace Elements Research 190:358–361. DOI: https://doi.org/10.1007/s12011-018-1546-0 [↗](https://doi.org/10.1007/s12011-018-1546-0){target="_blank"}
+
+- Botha, C.J., Laver, P.N., Singo, A., Venter, E.A., Ferreira, G.C.H., Rösemann, M., and Myburgh, J.G. 2019. Evaluation of a Norwegian-developed ELISA to determine microcystin concentrations in fresh water. Water Supply 19:743–752. DOI: https://doi.org/10.2166/ws.2018.118 [↗](https://doi.org/10.2166/ws.2018.118){target="_blank"}
+
+- Laver, P., Alexander, K.A. 2018. Association with humans and seasonality interact to reverse predictions for animal space use. Movement Ecology 6:5. DOI: https://doi.org/10.1186/s40462-018-0123-7 [↗](https://doi.org/10.1186/s40462-018-0123-7){target="_blank"}
+
+- de Bruin, P.R., Ganswindt, A., Laver, P., and le Roux, A. 2018. Friendly foxes: the relationship between steroid hormones and social behaviour in a monogamous African canid. Journal of Zoology 306:110–118. DOI: https://doi.org/10.1111/jzo.12574 [↗](https://doi.org/10.1111/jzo.12574){target="_blank"}
+
+- Webster, A.B., Burroughs, R.E.J., Laver, P., and Ganswindt, A. 2018. Non-invasive assessment of adrenocortical activity as a measure of stress in leopards Panthera pardus. African Zoology 53:53–60. DOI: 10.1080/15627020.2018.1467280 [↗](https://doi.org/10.1080/15627020.2018.1467280){target="_blank"}
+
+- Alexander, K., Williams, M., Laver, P., Sanderson, C., Kanipe, C., and Palmer, M. 2017. Pathology of the emerging Mycobacterium tuberculosis complex pathogen, M. mungi in the banded mongoose Mungos mungo. Veterinary Pathology 55:303–309. DOI: https://doi.org/10.1177/0300985817741730 [↗](https://doi.org/10.1177/0300985817741730){target="_blank"}
+
+- Scheun, J., Bennett, N., Nowack, J., Laver, P., and Ganswindt, A. 2017. Putative drivers of adrenocortical activity in captive African lesser bushbaby, Galago moholi. Canadian Journal of Zoology 95:787–795. DOI: https://doi.org/10.1139/cjz-2016-0223 [↗](https://doi.org/10.1139/cjz-2016-0223){target="_blank"}
+
+- Singo, A., Myburgh, J., Laver, P., Venter, E., Ferreira, G., Rosemann, G., and Botha, C. 2017. Vertical transmission of microcystins to Nile crocodile (Crocodylus niloticus) eggs. Toxicon 134:50–56. DOI: https://doi.org/10.1016/j.toxicon.2017.05.017 [↗](https://doi.org/10.1016/j.toxicon.2017.05.017){target="_blank"}
+
+- Badenhorst, M., Page, P., Ganswindt, A., Laver, P., Guthrie, A., and Schulman, M. 2015. Detection of equine herpesvirus-4 and physiological stress patterns in young thoroughbreds consigned to a South African auction sale. BMC Veterinary Research 11:126. DOI: https://doi.org/10.1186/s12917-015-0443-4 [↗](https://doi.org/10.1186/s12917-015-0443-4){target="_blank"}
+
+- Laver, P., Powell, R., and Alexander, K. 2015. Screening GPS telemetry data for locations having unacceptable error. Ecological Informatics 27:11–20. DOI: https://doi.org/10.1016/j.ecoinf.2015.02.001 [↗](https://doi.org/10.1016/j.ecoinf.2015.02.001){target="_blank"}
+
+- Laver, P., Ganswindt, A., Ganswindt, S., and Alexander, K. 2012. Non-invasive monitoring of glucocorticoid metabolites in banded mongooses (Mungos mungo) in response to physiological and biological challenges. General and Comparative Endocrinology 179:178–183. DOI: https://doi.org/10.1016/j.ygcen.2012.08.011 [↗](https://doi.org/10.1016/j.ygcen.2012.08.011){target="_blank"}
+
+- Alexander, K., Laver, P., Michel, A., Williams, M., van Helden, P., Warren, R., and Gey von Pittius, N. 2010. Novel Mycobacterium tuberculosis complex pathogen, M. mungi. Emerging Infectious Diseases 16(8):1296–1299. DOI: https://doi.org/10.3201/eid1608.100314 [↗](https://doi.org/10.3201/eid1608.100314){target="_blank"}
+
+- Laver, P., and Kelly, M. 2008. A critical review of home range studies. Journal of Wildlife Management 72(1):290–298. DOI: https://doi.org/10.2193/2005-589 [↗](https://doi.org/10.2193/2005-589){target="_blank"}
+
+## Book chapters
+
+- Alexander, K., Sanderson, C., and Laver, P. 2015. Novel Mycobacterium tuberculosis complex spp. in group-living African mammals. In Many Hosts of Mycobacteria, Tuberculosis, Leprosy, and other Mycobacterial Diseases of Man and Animals, edited by H. Mukundan, M. Chambers, W. Waters, M. Larsen. CABI Publishers, New York.
+
+## Published abstracts
+
+- Botha, A., Birrell, J., Schulman, M., du Plessis, L., Laver, P., Soley, J., and Bertschinger, H. 2016. Effects of the GnRH vaccine Improvac on testicular tissue of young stallions. Animal Reproduction Science 169:97. Http://dx.doi.org/10.1016/j.anireprosci.2016.03.015. [↗](){target="_blank"}
+
+## Thesis and dissertation
+
+- Laver, P. 2013. The foraging ecology of banded mongooses (Mungos mungo): Epidemiological and human-wildlife conflict implications. PhD Dissertation, Virginia Polytechnic and State University, Blacksburg, VA, USA.
+
+- Laver, P. 2005. Cheetah of the Serengeti Plains: A home range analysis. MSc Thesis, Virginia Polytechnic and State University, Blacksburg, VA, USA.
+
+## Technical reports
+
+- Alexander, K., Vandewalle, M., and Laver, P. 2011. Northern Botswana human-wildlife co-existence project. Component B: Survey and mapping of elephant corridors and cluster fences. Government of Botswana.
+
+## Manuals
+
+- Laver, P. 2005. ABODE: Kernel home range estimation for ArcGIS, using VBA and ArcObjects. User Manual, Beta Version 2, pp 62.
+
+## Popular press
+
+- Laver, P. 2015a. Canary in the coal mine and crocodile in the creek. The Golden Rhino, Issue 9.
+
+- Laver, P. 2015b. Social or single mongoose appeal. Zambezi Traveller, Issue 20.
+
+## Conference presentations - oral
+
+- Laver, P., and Ganswindt, A. 2017. Croc stress: Non-invasive monitoring of stress hormones in captive and wild crocodiles. South African Crocodile Industry Association Annual Conference, Pretoria, South Africa.
+
+- Botha, A., Birrell, J., Schulman, M., du Plessis, L., Laver, P., Soley, J., and Bertschinger, H. 2016. Effects of the GnRH vaccine Improvac on testicular tissue of young stallions. 10th Biennial Conference of the Association of Applied Animal Andrology, Tours, France.
+
+- Laver, P., Ganswindt, S., and Ganswindt, A. 2016. Using non-invasive measurement of physiological stress in the Nile crocodile as a biomonitoring tool. 24th Working Meeting of the IUCN Species Survival Commission Crocodile Specialist Group, Skukuza, South Africa.
+
+- Laver, P. and Alexander, K. 2015. Seasonal and synanthropic drivers of space use: effects on banded mongoose (Mungos mungo) movement. 37th Congress of the Zoological Society of Southern Africa, Grahamstown, South Africa.
+
+- Laver, P. and Ganswindt, A. 2015. Using faecal glucocorticoid metabolites from wild animals as biomonitoring tools: Nile crocodile stress and freshwater health. 5th Meeting of the International Society of Wildlife Endocrinology, Berlin, Germany.
+
+- Laver, P., Ganswindt, A., Ganswindt, S., Williams, M., Palmer, M., and Alexander, K. 2014. An overview of the pathology, epidemiology, and ecological physiology of infections of a novel Mycobacterium species, M. mungi, in its only known host, the banded mongoose. University of Pretoria, Faculty of Veterinary Science, Faculty Day, Onderstepoort, South Africa. (Winner: best paper).
+
+- Kelly, M. and Laver, P. 2006. Moving in social circles: Philopatry and interaction in Serengeti cheetah. The Wildlife Society Annual Conference, Anchorage, AK, USA.
+
+- Laver, P., Kelly, M., Caro, T., and Durant, S. 2006. Moss or a rolling stone? Home range in a ‘migratory’ carnivore: Serengeti cheetah. The Wildlife Society Annual Conference, Anchorage, AK, USA.
+
+- Laver, P. 2004. Home range analysis — The science of agreement. Society for Conservation GIS Annual Meeting, NCTC, USA.
+
+- Laver, P., Kelly, M., Caro, T., and Durant, S. 2004. Female cheetah of the Serengeti Plains: Home ranges from 1969 to 1994. Society for Conservation Biology Annual Meeting, New York, NY, USA.
+
+## Conference presentations - poster
+
+- Laver, P., Ganswindt, A. 2017. Statistics and wildlife endocrinology: A review of current practice and recommendations for future directions. 6th Meeting of the International Society of Wildlife Endocrinology, Orlando, USA.
+
+- Laver, P., Ganswindt, A., Ganswindt, S., and Alexander, K. 2015. Is adrenocortical activity associated with predation risk and anti-predator behaviour? A field test in free-ranging banded mongooses. 5th Meeting of the International Society of Wildlife Endocrinology, Berlin, Germany. (Winner: best poster).
+
+- Laver, P., Ganswindt, A., Muenscher, S., Williams, M., and Alexander, K. 2012. Urban life and seasonality. Mid-Atlantic Chapter of the Ecological Society of America, Virginia Tech, Blacksburg, VA, USA.
+
+- Laver, P., Kelly, M., Durant, S., and Caro, T. 2007. Philopatry, dispersal and static interaction in Serengeti cheetah. International Felid Biology and Conservation Conference, Oxford, UK.
+
+## Selected published teaching materials (uncredited)
+
+- Epidemic Simulation. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:1cdf2d84:lx_simulation:1){target="_blank"}
+
+- How to Interpret Disease Screening Test Results. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:61ac6a00:lx_simulation:1){target="_blank"}
+
+- Using Bayes’ Rule to Interpret Disease Screening Test Results. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:455b779b:lx_simulation:1){target="_blank"}
+
+- Graphical Interpretation of Disease Screening Test Results. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:71230eed:lx_simulation:1){target="_blank"}
+
+- Amplifying Power of PCR. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:46523069:lx_simulation:1){target="_blank"}
+
+- The Power of Simulation and Modeling. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:155bafcc:html:1){target="_blank"}
+
+- Monte Carlo Simulation in Biotechnology. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:4748015d:html:1){target="_blank"}
+
+- Quantifying Variability in Data. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:2ab6aea6:html:1){target="_blank"}
+
+- Quantifying Variability in Global Temperature Data. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:a421dd87:html:1){target="_blank"}
+
+- Probability Distributions. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:f649f23a:html:1){target="_blank"}
+
+- Theoretical Probability Distribution Decision Tree. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:f9e48f16:lx_image:1){target="_blank"}
+
+- Obtaining Representative Samples. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:86ee4032:html:1){target="_blank"}
+
+- Identifying Misleading Uses of Data. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:44529ec1:html:1){target="_blank"}
+
+- Introduction to Data Visualization. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:f3cf1afd:html:1){target="_blank"}
+
+- Correlation vs Causation. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:53892e1c:html:1){target="_blank"}
+
+- Statistical Significance and Effect Size. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:c6345a08:html:1){target="_blank"}
+
+- Misuse of Hypothesis Testing and p-Values. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:6eaf6fe1:html:1){target="_blank"}
+
+- Hypothesis Testing and Confidence Intervals. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:18776c04:html:1){target="_blank"}
+
+- Introduction to Regression Analysis in Climate Science. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:ea7e3f06:video:1){target="_blank"}
+
+- Simple Linear Regression. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:da51aff3:lx_image:1){target="_blank"}
+
+- Fitting Linear Regression. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:b9202035:lx_image:1){target="_blank"}
+
+- Chi-square Goodness of Fit and Pea Flower Color. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:aa4e3a03:lx_image:1){target="_blank"}
+
+- Chi-square Goodness of Fit and Offspring Sex Ratio. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:bd921674:lx_image:1){target="_blank"}
+
+- Scale and the Powers of Ten. LabXchange. [↗](https://www.labxchange.org/library/items/lb:LabXchange:33a3b8e3:lx_simulation:1){target="_blank"}
+
+
+
+
+
+
